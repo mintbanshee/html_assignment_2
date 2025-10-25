@@ -1,0 +1,38 @@
+name: html_assignment_2 
+      this is the name of your ROOT folder & I need your ROOT folder zipped before you send it to me. (do not use WinZipN or 7Zip etc...)
+
+due date: Monday BEFORE class begins!
+
+use any of the provided images (Artist Themed) (Course Resources => File Tab => Assignment_2_Files) 👍
+      OR you can get all of your own images and theme it to whatever you want! BUT get good images! You can also Ai generate your images 👍
+
+page layout is 100% up to you - do not simply copy a class sample! 👍
+
+build an App Shell (consistent header, nav, footer)
+
+you MUST have 4 full pages WITH CONTENT! (minimum of h1, p tags, and more than 1 image - for each page)
+        - home
+          - feedback
+          - desk 
+          - instagram video 
+        - about
+          - pic of me
+          - about me
+          - story behind the name
+          - pic of the view of home 
+        - shop
+          - 2 bracelets
+          - 2 necklaces
+          - 1 anklet
+          - 1 coaster
+          - 1 earrings
+        - contact
+          - form
+          - pic 
+          - instagram
+
+you MUST use either devicons.dev for some icons OR fonts.google.com on at least 1 font somewhere on your site!
+
+you MUST create everything! yes you can copy code from the samples in bits and pieces but DO NOT simply modify class code
+
+your code MUST BE PERFECT!!! formatting is PERFECT follow my example exactly 👍

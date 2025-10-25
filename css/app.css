@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+header {
+  width: 100%;
+  height: 700px;
+  background: url('../assets/images/logo-header/bsmHeaderBKG.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid #fff;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+  #logo {
+    width: 600px;
+    margin-top: 55px;
+  }
+  .lavishly-yours-regular {
+    font-family: "Lavishly Yours", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+h1 {
+  font-size: 5.5em;
+  margin-top: -120px;
+  color: #fff;
+  text-shadow: 3px 3px 7px #333;
+}
+nav {
+  width: 100%;
+  height: 80px;
+  background: rgba(79, 111, 111, .75);
+  box-shadow: 0 3px 8px #333; 
+  padding: 0px 20px 0;
+  border: 1px solid #fff;
+  text-align: center;
+  position: fixed;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+  #tinyLogo {
+    width: 90px;
+    margin-top: 10px;
+    float: left;
+    display: block;
+  }
+  .navLinks {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ 
+  }
+    .navLinks a {
+      font-size: 1.8em;
+      text-decoration: none;
+      color: #fff;
+      font-family: Georgia, serif;
+    }
+  #socials {
+    float: right;
+  }
+  .icon {
+    width: 40px;
+    height: auto;
+  }
+main {
+  width: 100%;
+  min-height: 1200px;
+  border-bottom: 1px solid #fff;
+}
+  #indexMain {
+    padding: 50px;
+    text-align: center;
+    height: auto;
+    background: #FFEFBA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+footer {
+  background: rgb(79, 111, 111);
+  width: 100%;
+  height: 150px;
+  padding-top: 20px;
+  font-size: 1em;
+  text-align: center;
+}
