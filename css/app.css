@@ -1,3 +1,4 @@
+/*--------SHELL--------*/
 * {
   padding: 0;
   margin: 0;
@@ -109,60 +110,6 @@ main {
   min-height: 1200px;
   border-bottom: 1px solid #fff;
 }
-  #indexMain {
-    padding: 50px;
-    text-align: center;
-    height: auto;
-    background: #FFEFBA;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  }
-  #mainLeft {
-    width: 50%;
-    min-height: 1100px;
-    float: left;
-    border-right: 10px solid rgb(79, 111, 111);
-    text-align: center;
-  }
-    #instagramReel {
-      display: flex;
-      justify-content: center;
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
-  #mainRight {
-    width: 50%;
-    min-height: 1100px;
-    float: left;
-    padding: 30px 40px;
-    text-align: center;
-    justify-content: center;
-  }
-  #feedbackIMG {
-    width: 40%;
-    height: auto;
-    padding: 10px;
-    vertical-align: top;
-    margin: 10px;
-  }
-  #deskIMG {
-    width: 70%;
-    height: auto;
-    padding: 10px;
-    margin-top: 20px;
-  }
-ul {
-    margin: 0;
-    padding: 0;
-    list-style-position: inside;
-}
-#thicket {
-  width: 40%;
-  margin-top: 25px;
-}
-  #thicket:hover {
-    filter: drop-shadow(12px 12px 18px #333);
-  }
 footer {
   background: rgb(79, 111, 111);
   width: 100%;
@@ -222,3 +169,113 @@ footer {
       margin-top: 24px;
       font-size: 0.9em;
     }
+
+/*--------INDEX PAGE--------*/
+  #indexMain {
+    padding: 50px;
+    text-align: center;
+    height: auto;
+    background: #FFEFBA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  #mainLeft {
+    width: 50%;
+    min-height: 1100px;
+    float: left;
+    border-right: 10px solid rgb(79, 111, 111);
+    text-align: center;
+  }
+    #instagramReel {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  #mainRight {
+    width: 50%;
+    min-height: 1100px;
+    float: left;
+    padding: 30px 40px;
+    text-align: center;
+    justify-content: center;
+  }
+  #feedbackIMG {
+    width: 40%;
+    height: auto;
+    padding: 10px;
+    vertical-align: top;
+    margin: 10px;
+  }
+  #deskIMG {
+    width: 70%;
+    height: auto;
+    padding: 10px;
+    margin-top: 20px;
+  }
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+}
+#thicket {
+  width: 40%;
+  margin-top: 25px;
+}
+  #thicket:hover {
+    filter: drop-shadow(12px 12px 18px #333);
+  }
+
+/*--------ABOUT PAGE--------*/
+#aboutMain {
+  padding: 50px;
+  text-align: center;
+  height: auto;
+  background: #003973;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #E5E5BE, #0e7d83);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #E5E5BE, #0e7d83); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#bioPic {
+  width: 550px;
+  float: left;
+  margin: 0 10px;
+  border-radius: 26px;
+}
+#aboutMeBlurb {
+  padding: 10px;
+}
+  #aboutMeBlurb > p {
+  color: #000;
+  font-size: 1.6em;
+  font-weight: 400;
+  padding: 10px;
+  letter-spacing: 0.1em;
+  margin: 20px;
+  }
+h4 {
+ color: #fff;
+ text-shadow: 3px 3px 5px #333;
+ font-size: 3em;
+ letter-spacing: 1px;
+}
+#behindTheName {
+  margin-top: 2em;
+  border-top: 2px solid rgb(79, 111, 111);
+}
+  #behindTheName > h4 {
+    margin-top: 1em;
+  }
+  #behindTheName > p {
+  color: #000;
+  font-size: 1.6em;
+  font-weight: 550;
+  padding: 10px;
+  letter-spacing: 0.1em;
+  margin: 20px;
+  }
+  .aboutIMG {
+    width: 400px;
+    height: 250px;
+    border-radius: 16px;
+    padding: 5px;
+  }
