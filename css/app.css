@@ -28,6 +28,11 @@ header {
     color: #fff;
     text-shadow: 3px 3px 7px #333;
   }
+p {
+  margin-top: 10px;
+  color: #333;
+  font-size: 1.3em;
+}
 h1 {
   color: rgb(79, 111, 111);
   text-shadow: 1px 1px 3px #fff;
@@ -39,6 +44,12 @@ h2 {
   margin-bottom: 20px;
   font-weight: 400;
   font-style: italic;
+}
+h3 {
+  color: rgb(79, 111, 111);
+  text-shadow: 1px 1px 3px #fff;
+  font-size: 2em;
+  margin-top: 20px;
 }
 nav {
   width: 100%;
@@ -60,6 +71,9 @@ nav {
     float: left;
     display: block;
   }
+  #tinyLogo:hover {
+    filter: drop-shadow(12px 12px 18px #333);
+  }
   .navLinks {
     position: absolute;
     left: 50%;
@@ -77,9 +91,14 @@ nav {
       color: #fff;
       font-family: Georgia, serif;
     }
+    .navLinks a:hover {
+      color: #333;
+      text-decoration: underline;
+    }
   #socials {
     float: right;
   }
+
   .icon {
     width: 40px;
     height: auto;
@@ -109,6 +128,7 @@ main {
       display: flex;
       justify-content: center;
       margin-top: 20px;
+      margin-bottom: 20px;
     }
   #mainRight {
     width: 50%;
@@ -136,6 +156,13 @@ ul {
     padding: 0;
     list-style-position: inside;
 }
+#thicket {
+  width: 40%;
+  margin-top: 25px;
+}
+  #thicket:hover {
+    filter: drop-shadow(12px 12px 18px #333);
+  }
 footer {
   background: rgb(79, 111, 111);
   width: 100%;
