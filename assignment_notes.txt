@@ -11,28 +11,35 @@ page layout is 100% up to you - do not simply copy a class sample! 👍
 build an App Shell (consistent header, nav, footer)
 
 you MUST have 4 full pages WITH CONTENT! (minimum of h1, p tags, and more than 1 image - for each page)
-        - home
-          - feedback
-          - desk 
-          - instagram video 
-        - about
-          - pic of me
-          - about me
-          - story behind the name
-          - pic of the view of home 
-        - shop
+        - home - done
+          - feedback - added
+          - desk - added 
+          - instagram video - added
+          ** additionals - call to action join group
+        - about - done
+          - pic of me - added
+          - about me - added 
+          - story behind the name - added 
+          - pic of the view of home - not added
+          ** additional - row of 3 photos
+            - me working
+            - the actual trees behind the name
+            - me enjoying the view at that house
+        - shop - done 
           - 2 bracelets
           - 2 necklaces
           - 1 anklet
           - 1 coaster
           - 1 earrings
-        - contact
+          ** additional - hover text and more photos
+        - contact 
           - form
           - pic 
           - instagram
 
 you MUST use either devicons.dev for some icons OR fonts.google.com on at least 1 font somewhere on your site!
-
+  - header font from fonts.google  
 you MUST create everything! yes you can copy code from the samples in bits and pieces but DO NOT simply modify class code
-
+  - my own creation 
 your code MUST BE PERFECT!!! formatting is PERFECT follow my example exactly 👍
+ - no guarantees there but i tried 
