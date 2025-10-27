@@ -99,7 +99,6 @@ nav {
   #socials {
     float: right;
   }
-
   .icon {
     width: 40px;
     height: auto;
@@ -279,3 +278,55 @@ h4 {
     border-radius: 16px;
     padding: 5px;
   }
+
+  /*--------SHOP PAGE--------*/
+#shopMain {
+  padding: 50px;
+  text-align: center;
+  height: auto;
+  background: #CC95C0;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+  #shopMain p {
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+  }
+.shopItem {
+  position: relative;
+  text-align: center;
+  width: 250px;
+}
+  .shopItem img {
+    width: 100%;
+    border-radius: 16px;
+    border: 2px solid #fff;
+    display: block;
+  }
+  .shopItem p {
+    opacity: 0;
+    margin-top: 8px;
+    transition: opacity .3s ease;
+    color: #fff;
+    background: rgba(79, 111, 111, .75);
+  }
+  .shopItem:hover p {
+    opacity: 1;
+  }
+  .shopItem:hover {
+    filter: drop-shadow(12px 12px 18px #333);
+  }
+#shopRow {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+
+
+
+  /*--------CONTACT PAGE--------*/
