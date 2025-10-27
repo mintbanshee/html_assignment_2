@@ -374,6 +374,9 @@ button {
   background: rgb(79, 111, 111);
   color: #fff;
 }
+  button:hover {
+    filter: drop-shadow(12px 12px 18px #333);
+  }
 #artvsartist {
   width:300px
 }
