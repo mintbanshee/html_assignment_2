@@ -72,9 +72,6 @@ nav {
     float: left;
     display: block;
   }
-  #tinyLogo:hover {
-    filter: drop-shadow(12px 12px 18px #333);
-  }
   .navLinks {
     position: absolute;
     left: 50%;
@@ -84,7 +81,6 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
- 
   }
     .navLinks a {
       font-size: 1.8em;
@@ -104,86 +100,112 @@ nav {
     height: auto;
     margin: 10px;
   }
+body {
+  display: flex;
+  flex-direction: column;
+}
 main {
   width: 100%;
   min-height: 1200px;
   border-bottom: 1px solid #fff;
+  padding-bottom: 40px;
+  flex: 1;
+}
+main::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 footer {
   background: rgb(79, 111, 111);
-  width: 100%;
-  height: 250px;
-  padding: 32px 16px;
-  font-size: 1em;
-  text-align: center;
-  border-top: 2px solid #fff;
   color: #fff;
-  position: relative;
+  padding: 40px 40px 60px;
+  width: 100%;
 }
-  #footerLeft {
-    position: absolute;
-    left: 16px;
-    top: 32px;
-  }
-    #tinyLogoFooter {
-      width: 200px;
-    }
-  #footerRight {
-    width: 50%;
-    float: right;
-    padding: 30px 40px;
-  }
-    #footerRightIMG {
-      width: 120px;
-      border-radius: 16px;
-    }
-  .footerLinksContainer {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-  }
-    .footerLinksLeft {
-      list-style-position: inside;
-      padding-left: 0;
-      margin: 0 80px;
-    }
-      .footerLinksLeft li {
-        font-size: 1em;
-        margin-bottom: 4px;
-        list-style-type: disc;
-        text-align: left;
-      }
-    .footerLinksRight {
-      list-style-position: inside;
-      padding-left: 0;
-      margin: 0 70px;
-    }
-      .footerLinksRight li {
-        font-size: 1em;
-        margin-bottom: 4px;
-        list-style-type: disc;
-        text-align: left;
-      }
-    footer p {
-      margin-top: 24px;
-      font-size: 0.9em;
-    }
+
+.footerLayout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; 
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 40px;
+}
+.footerLeft {
+  flex: 1;
+}
+#tinyLogoFooter {
+  width: 80px;
+  height: auto;
+}
+.footerCenter {
+  flex: 2;
+  text-align: center;
+}
+.footerLinks {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-bottom: 15px;
+}
+.footerLinks ul {
+  list-style-position: inside;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+.footerLinks li {
+  margin-bottom: 4px;
+}
+.footerTagline {
+  margin-top: 12px;
+  font-style: italic;
+}
+.footerNote {
+  margin-top: 6px;
+  font-size: 0.9em;
+}
+.footerRight {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.accountLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.9em;
+}
+#accountIconFooter {
+  width: 40px;
+  height: auto;
+  margin-bottom: 4px;
+}
+
+
+
+
 
 /*--------INDEX PAGE--------*/
   #indexMain {
+    display: flex;
+    gap: 0;
     padding: 50px;
     text-align: center;
-    height: auto;
     background: #FFEFBA;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
+  #mainLeft, #mainRight {
+    flex: 1;
+    padding: 30px 40px;
+  }
   #mainLeft {
-    width: 50%;
-    min-height: 1100px;
-    float: left;
     border-right: 10px solid rgb(79, 111, 111);
-    text-align: center;
   }
     #instagramReel {
       display: flex;
@@ -196,14 +218,6 @@ footer {
       overflow-y: auto;
       margin: 0 auto;
     }
-  #mainRight {
-    width: 50%;
-    min-height: 1100px;
-    float: left;
-    padding: 30px 40px;
-    text-align: center;
-    justify-content: center;
-  }
   #feedbackIMG {
     width: 40%;
     height: auto;
@@ -230,11 +244,10 @@ ul {
     filter: drop-shadow(12px 12px 18px #333);
   }
 
-/*--------ABOUT PAGE--------*/
+/*---/*--------ABOUT PAGE--------*/
 #aboutMain {
   padding: 50px;
   text-align: center;
-  height: auto;
   background: #003973;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #E5E5BE, #0e7d83);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #E5E5BE, #0e7d83); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -284,11 +297,10 @@ h4 {
     padding: 5px;
   }
 
-  /*--------SHOP PAGE--------*/
+  /*-----SHOP PAGE--------*/
 #shopMain {
   padding: 50px;
   text-align: center;
-  height: auto;
   background: #CC95C0;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -311,17 +323,13 @@ h4 {
     display: block;
   }
   .shopItem p {
-    opacity: 0;
     margin-top: 8px;
-    transition: opacity .3s ease;
     color: #fff;
-    background: rgba(79, 111, 111, .75);
-  }
-  .shopItem:hover p {
-    opacity: 1;
+    background: rgba(79, 111, 111, .45);
   }
   .shopItem:hover {
     filter: drop-shadow(12px 12px 18px #333);
+    cursor: pointer;
   }
 #shopRow {
   margin-top: 20px;
@@ -335,24 +343,22 @@ h4 {
 #contactMain {
   padding: 50px;
   text-align: center;
-  height: auto;
   background: #E8CBC0;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #636FA4, #E8CBC0);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #636FA4, #E8CBC0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
 }
 #contactPic {
   width: 550px;
-  float: right;
-  margin: 0 10px;
   border-radius: 26px;
+  float: right;
 }
 #contactForm {
   width: 500px;
-  height: 30px;
-  margin: 20px 270px;
+  height: 60px;
+  margin: 80px 370px;
 }
 input, button {
-  font-size: 0.8em;
+  font-size: 1em;
   width: 100%;
   padding-left: 10px;
   margin-bottom: 15px;
@@ -360,7 +366,7 @@ input, button {
   font-family: inherit;
 }
 textarea {
-  font-size: 0.8em;
+  font-size: 1em;
   width: 100%;
   height: 100px;
   padding-left: 10px;
