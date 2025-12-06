@@ -24,6 +24,8 @@
       <img src="assets/images/icons/discord-white.png" alt="discord" class="icon">
       <img src="assets/images/icons/insta-white.png" alt="instagram" class="icon">
       <img src="assets/images/icons/linkedin-white.png" alt="linkedin" class="icon">
+      <img src="assets/images/icons/cartWhite.png" alt="shoppingCart" class="cartIcon" onclick="showPanel();">
+      <span id="cartCounter">0</span>
     </span>
   </nav>
   <header>
@@ -41,11 +43,24 @@
         <h2 id="productName"></h2>
         <p id="productDescription"></p>
         <p id="productPrice" class="price"></p>
-        <button id="addToCartBtn">Add to Cart</button>
+        <button id="addToCartBtn" onclick="addItem(currentIndex)">Add to Cart</button>
       </div>
       <span id="closeBtn" onclick="hideBox()">&times;</span>
     </div>
    </div> 
+
+<div id="cartPanel"> 
+  <div id="cartHeader">
+    <span id="closeBtn" onclick="hidePanel()">&times;</span> 
+    <h1>Your Cart</h1>
+  </div>
+  <div id="cartItems"></div>
+  <div id="cartTotal"></div>
+  <div id="cartBottom">
+    <button type="button" onclick="clearCart();">Clear Cart</button>
+    <button type="button" id="checkoutBtn">Checkout</button> 
+  </div>
+</div>
 
   <main id="shopMain">
     <h1>Shop Our Handmade Jewelry</h1>
@@ -127,5 +142,8 @@
 </footer>
 <script src="js/jquery.js"></script>
 <script src="js/lightbox.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/item.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>

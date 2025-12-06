@@ -1,3 +1,4 @@
+let currentIndex = null;
 
 const products = [
   {name: "Chester Necklace", price: 250,
@@ -57,6 +58,8 @@ img: "assets/images/products/img1.png"},
 
 function showBox(num) {
   const item = products[num - 1];
+  currentIndex = num - 1;
+
   $('#lightbox').css('visibility', 'visible');
   $('#lightboxImage').attr('src', item.img);
   $('#productName').text(item.name);
