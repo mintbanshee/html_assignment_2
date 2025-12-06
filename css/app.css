@@ -104,6 +104,62 @@ body {
   display: flex;
   flex-direction: column;
 }
+#lightbox {
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0,0.85);
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#modalContent {
+  background: #ffffff;
+  width: 70%;
+  max-width: 900px;
+  display: flex;
+  gap: 24px;
+  padding: 28px;
+  border-radius: 16px;
+  position: relative;
+}
+#modalLeft img {
+  width: 320px;
+  border-radius: 12px;
+  pointer-events: none;
+}
+#modalRight {
+  flex-grow: 1;
+}
+#modalRight h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+#modalRight .price {
+  font-weight: 700;
+  margin: 12px 0;
+}
+#addToCartBtn {
+  padding: 12px 24px;
+  background: #4e7d6a;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+#closeBtn {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  font-size: 2.5rem;
+  cursor: pointer;
+  user-select: none;
+}
+
 main {
   width: 100%;
   min-height: 1200px;

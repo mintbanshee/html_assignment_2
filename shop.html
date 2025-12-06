@@ -10,6 +10,7 @@
   <title>Blue Spruce Musings</title>
 </head>
 <body>
+
   <nav>
     <a href="index.html" title="home">
     <img id="tinyLogo" src="assets/images/logo-header/bsmLogo.png" alt="nav Logo - home">
@@ -30,49 +31,65 @@
       <h1 class="lavishly-yours-regular">Blue Spruce Musings</h1>
   </header>
 
+
+  <div id="lightbox" onclick="hideBox();">
+    <div id="modalContent" onclick="event.stopPropagation()">
+      <div id="modalLeft">
+        <img id="lightboxImage" src="https://placeholdit.com/500x500" alt="Item Details Popup">
+      </div>
+      <div id="modalRight">
+        <h2 id="productName"></h2>
+        <p id="productDescription"></p>
+        <p id="productPrice" class="price"></p>
+        <button id="addToCartBtn">Add to Cart</button>
+      </div>
+      <span id="closeBtn" onclick="hideBox()">&times;</span>
+    </div>
+   </div> 
+
   <main id="shopMain">
     <h1>Shop Our Handmade Jewelry</h1>
     <p>All pieces are unique, handcrafted originals. Only select designs, such as the Lariat and Chester necklaces, were recreated by request.</p>
     <div id="shopRow">
       <div class="shopItem">
-        <img src="assets/images/products/chesterNecklace.jpg" alt="Chester Necklace">
+        <img src="assets/images/products/img1.png" alt="Chester Necklace" onclick="showBox(1);">
         <p>Chester Necklace</p> </div>
       <div class="shopItem">
-        <img src="assets/images/products/LongNecklace.jpg" alt="Slip-On Tassel Necklace">
+        <img src="assets/images/products/img2.png" alt="Slip-On Tassel Necklace" onclick="showBox(2)">
         <p>Slip-On Tassel Necklace</p> </div>
       <div class="shopItem">
-        <img src="assets/images/products/Lariat2.jpg" alt="Lariat Necklace">
+        <img src="assets/images/products/img3.png" alt="Lariat Necklace" onclick="showBox(3)">
         <p>Lariat Necklace</p> </div>
       <div class="shopItem">
-        <img src="assets/images/products/Smoky.jpg" alt="Smoky Quartz Necklace">
+        <img src="assets/images/products/img4.png" alt="Smoky Quartz Necklace" onclick="showBox(4)">
         <p>Smoky Quartz Necklace</p></div>
     </div>
     <div id="shopRow">
       <div class="shopItem">
-        <img src="assets/images/products/MicroPersephone.png" alt="Micro-Persephone Bracelet">
+        <img src="assets/images/products/img5.png" alt="Micro-Persephone Bracelet" onclick="showBox(5)">
         <p>Micro-Persephone Bracelet</p> </div>
       <div class="shopItem">
-        <img src="assets/images/products/NotAzidahaka.jpg" alt="Not-an-Azidahaka Bracelet">
+        <img src="assets/images/products/img6.png" alt="Not-an-Azidahaka Bracelet" onclick="showBox(6)">
         <p>Not-an-Azidahaka Bracelet</p> </div>
       <div class="shopItem">
-        <img src="assets/images/products/MicroByzeeBubbles.png" alt="Micro-Byzee Bubbles Charm Bracelet">
+        <img src="assets/images/products/img7.png" alt="Micro-Byzee Bubbles Charm Bracelet" onclick="showBox(7)">
         <p>Micro-Byzee Bubbles Charm Bracelet</p> </div>
       <div class="shopItem">
-        <img src="assets/images/products/GSG.png" alt="GSG Bracelet">
+        <img src="assets/images/products/img8.png" alt="GSG Bracelet" onclick="showBox(8)">
         <p>GSG Bracelet</p> </div>
     </div>
     <div id="shopRow">
       <div class="shopItem">
-        <img src="assets/images/products/TrinityEarrings.png" alt="Trinity Twist Earrings">
+        <img src="assets/images/products/img9.png" alt="Trinity Twist Earrings" onclick="showBox(9)">
         <p>Trinity Twist Earrings</p> </div>
       <div class="shopItem">
-        <img src="assets/images/products/forestCoaster.jpg" alt="Enchanted Forest Coaster">
+        <img src="assets/images/products/img10.png" alt="Enchanted Forest Coaster" onclick="showBox(10)">
         <p>Enchanted Forest Moorish Rose Coaster</p> </div>
       <div class="shopItem">
-        <img src="assets/images/products/CoffinCoaster.jpg" alt="Coffin Shaped Coaster">
+        <img src="assets/images/products/img11.png" alt="Coffin Shaped Coaster" onclick="showBox(11)">
         <p>Coffin Shaped Moorish Rose Coaster</p> </div>
       <div class="shopItem">
-        <img src="assets/images/products/Anklet3.jpg" alt="Green Anklet">
+        <img src="assets/images/products/img12.png" alt="Green Anklet" onclick="showBox(12)">
         <p>Green Anklet</p> </div>
     </div>
   </main>
@@ -108,6 +125,7 @@
     </div>
   </div>
 </footer>
-
+<script src="js/jquery.js"></script>
+<script src="js/lightbox.js"></script>
 </body>
 </html>
